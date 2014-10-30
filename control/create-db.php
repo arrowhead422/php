@@ -36,7 +36,7 @@
 		 	echo "Database already exists.";//if is not exist it echo this out
 		 }
 
-		 	$query = $connection ->query("CREATE TABLE posts ("."id int(11 NOT NULL AUTO_INCREMENT,"
+		 	$query = $connection ->query("CREATE TABLE posts ("."id int(11 NOT NULL AUTO_INCREMENT,"//this query is creating a table for xampp if is successful it will echo out the message below
 		 		."title varchar(255) NOTNUL,"
 		 		."post text NOT NULL,"
 		 		."PRIMARY KEY (id))");
