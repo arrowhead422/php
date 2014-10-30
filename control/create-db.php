@@ -36,6 +36,18 @@
 		 	echo "Database already exists.";//if is not exist it echo this out
 		 }
 
+		 	$query = $connection ->query("CREATE TABLE posts ("."id int(11 NOT NULL AUTO_INCREMENT,"
+		 		."title varchar(255) NOTNUL,"
+		 		."post text NOT NULL,"
+		 		."PRIMARY KEY (id))");
+
+
+
+		 if($query){
+
+		 	echo "successfully created the table";
+		 }
+
 	$connection->close();
 
 
