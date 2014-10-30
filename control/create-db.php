@@ -6,11 +6,12 @@
 <body>
 
 <?php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/database.php");//require once is to require a file once
+	//__DIR__  a escape plan form the model to the database.php
 
-	$connection = new mysqli($host,$username,$password);
+	$connection = new mysqli($host,$username,$password);//it conects the database variable
 
-	if($connection->connect_error){
+	if($connection->connect_error){//
 		die("Error:". $connection->connect_error);
 
 	}//else{
@@ -27,7 +28,13 @@
 		 }
 
 
-		}
+		 }
+
+
+		 else{
+
+		 	echo "Database already exists.";//if is not exist it echo this out
+		 }
 
 	$connection->close();
 
