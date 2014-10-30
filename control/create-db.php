@@ -45,7 +45,7 @@
 
 		 if($query){
 
-		 	echo "successfully created the table";
+		 	echo "successfully created the table hello";
 		 }
 
 	$connection->close();
