@@ -21,8 +21,7 @@
 		$exists = $connection->select_db($database);//$exists
 
 		if(!$exists){//the ! is invering the varible to display the echo
-		 $query =  $connection->query('CREATE DATABASE $database');// $query is like a question
-			
+		 $query =  $connection->query("CREATE DATABASE $database");// $query is like a question
 		 if($query){
 		 	echo "successfully created database". $database;
 		 }
@@ -37,11 +36,14 @@
 		 }
 
 		 	$query = $connection ->query("CREATE TABLE posts ("."id int(11 NOT NULL AUTO_INCREMENT,"//this query is creating a table for xampp if is successful it will echo out the message below
-		 		."title varchar(255) NOTNUL,"
+		 		."title varchar(255) NOTNUL,"able
 		 		."post text NOT NULL,"
 		 		."PRIMARY KEY (id))");
 
-
+		 	if($query)
+		 	{
+		 		echo "successfully created table: posts"
+		 	}
 
 		 if($query){
 
