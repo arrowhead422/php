@@ -38,17 +38,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   class Person {
           public $me = true;
           
