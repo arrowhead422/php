@@ -6,9 +6,11 @@
     
       <?php
 
-        require_once(__DIR__ . "/view/header.php");
+        require_once(__DIR__ . "/view/header.php");// all these require once is what display my file and website
+        require_once(__DIR__ . "/view/navigation.php");
         require_once(__DIR__ . "/control/create-db.php");
         require_once(__DIR__ . "/view/footer.php");
+        
         
 
 
