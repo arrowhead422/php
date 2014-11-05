@@ -11,7 +11,7 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");// this php file is using the require once to connect the config.php and navigation to display on the website
 
-//
+//					
 ?>
 
 <nav>
