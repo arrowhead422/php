@@ -11,33 +11,7 @@
         require_once(__DIR__ . "/control/create-db.php");
         require_once(__DIR__ . "/view/footer.php");
         
-        
-
-
-
-
-
-
-
-        $tens = array("do","re","mi","alex");
-        $do = 0;
-        $re = 1;
-        $mi = 2;
-        $alex = 3;
-        $myname = "xiang";
-        $im=imagecreate(300, 200);
-        imagecolorallocate($im, 40, 20, 250);
-        imagejpeg($im,'dead.jpg');
-        
-       
-        echo "</h1>$myname</h1>";
-
-
-
-
-
-
-
+      
   class Person {
           public $me = true;
           
