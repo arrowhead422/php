@@ -19,7 +19,34 @@
 		<textarea name="post"></textarea> // the textarea are like a unlimated text writing box
 	</div>
 
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+
 </form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
