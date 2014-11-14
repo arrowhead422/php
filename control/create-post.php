@@ -1,6 +1,6 @@
 <?php
 
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	$connection = new mysqli($host, $username, $password, $database); // this code connect the database to the create-post.php
 	//it create a new mysqli
