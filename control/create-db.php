@@ -6,7 +6,7 @@
 <body>
 
 <?php
-	require_once(__DIR__ . "/../config.php");//require once is to require a file once
+	require_once(__DIR__ . "/../model/config.php");//require once is to require a file once
 	//__DIR__  a escape plan form the model to the database.php
 
 	$connection = new mysqli($host, $username, $password);//it conects the database variable
