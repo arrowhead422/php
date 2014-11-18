@@ -12,11 +12,22 @@
 			$this->password = $password;
 			$this->database = $database;
 		}
-		public function openConnection(){
+		public function openC onnection(){
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);// this function turn the private variable to public variable
+
+			if($this->$connection->connect_error){//
+				die("<p>Error:". $connection->connect_error . "</p>");// the <p> is a percaution for echo the echo out
+
+	}
 
 		}
 
-		public function closeConnection(){
+		public function closeConnection(){// isset are a function that tells you whether or not that i have variable in my filder
+			if(isset($this->connection)) {
+				$this->connection->close();
+
+
+			}
 
 
 		}
@@ -31,6 +42,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$this
 
 
 
