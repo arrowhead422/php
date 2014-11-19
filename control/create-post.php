@@ -2,7 +2,7 @@
 
 	require_once(__DIR__ . "/../model/config.php");
 
-	$connection = new mysqli($host, $username, $password, $database); // this code connect the database to the create-post.php
+	 // this code connect the database to the create-post.php//is bent delete
 	//it create a new mysqli
 
 	//it recevie information from the post and the title from the the filter input and it also sercer the blogs informations
@@ -25,7 +25,7 @@
 
 
 
-	$connection->close();
+	
 
 
 

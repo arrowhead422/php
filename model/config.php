@@ -10,4 +10,38 @@
 	$database = "blog_db";
 
 
+	$connection = new Database($host, $username, $password, $database);//this database object is going help me query on the database
+
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

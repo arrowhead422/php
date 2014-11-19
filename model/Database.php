@@ -32,9 +32,14 @@
 
 		}
 
-		public function query($string){
+		public function query($string){//this function is going to open aconnection to the database, query the database, get the result whether is succeful or not and return the result
+			$this->openConnection();
 
+			$query = $this->connection->query($string);
 
+			$this->closeConnection();
+
+			return $query;
 
 		}
 	}	
