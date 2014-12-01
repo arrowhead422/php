@@ -14,39 +14,34 @@
 			$this->password = $password;
 			$this->Database = $Database;
 
-			$this->connection = new mysqli($host, $username, $password, $Database);//it conects the database variable
+			$this->connection = new mysqli($host, $username, $password);//it conects the database variable
 
-	if($this->connection->connect_error){//
-		die("<p>Error:". $this->connection->connect_error . "</p>");// the <p> is a percaution for echo the echo out
+			if($this->connection->connect_error){//
+				die("<p>Error:". $this->connection->connect_error . "</p>");// the <p> is a percaution for echo the echo out
+			}
+			//else{
+				//echo "success:  ". $connection->host_info;
+			//}
 
-	}//else{
+			$exists = $this->connection->select_db($Database);//$exists
 
-		//echo "success:  ". $connection->host_info;
-	//}
-		$exists = $this->connection->select_db($Database);//$exists
-
-		if(!$exists){//the ! is invering the varible to display the echo
-		 $query =  $this->connection->query("CREATE DATABASE $Database");// $query is like a question
-		 if($query){
-		 	echo "<p>successfully created Database:". $Database . "</p>";
-		 }
-
-
-		 }
-
-
-		 else{
-
-		 	echo "Database already exists.";//if is not exist it echo this out
-		 }
+			if(!$exists){//the ! is invering the varible to display the echo
+		 		$query =  $this->connection->query("CREATE DATABASE $Database");// $query is like a question
+			 	if($query){
+			 		echo "<p>successfully created Database:". $Database . "</p>";
+		 		}
+			}
+			else{
+			 	echo "Database already exists.";//if is not exist it echo this out
+		 	}
 		}
+
 		public function openConnection(){
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->Database);// this function turn the private variable to public variable
 
 			if($this->connection->connect_error){//
 				die("<p>Error:". $connection->connect_error . "</p>");// the <p> is a percaution for echo the echo out
-
-	}
+			}
 
 		}
 
@@ -76,59 +71,3 @@
 
 		}
 	}	
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$this
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>

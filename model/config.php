@@ -15,7 +15,7 @@
 	$database = "blog_db";
 
 	if(!isset($_SESSION["connection"])) {
-		$connection = new Database($host, $username, $password, $Database);//this database object is going help me query on the database
+		$connection = new Database($host, $username, $password, $database);//this database object is going help me query on the database
 		$_SESSION["connection"] = $connection;// session work like function but just how we can use it
 	}
 

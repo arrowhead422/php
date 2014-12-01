@@ -1,10 +1,3 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
 <?php
 	require_once(__DIR__ . "/../model/config.php");//require once is to require a file once
 	//__DIR__  a escape plan form the model to the database.php
@@ -27,38 +20,4 @@
 		 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-</body>
-</html>
 
