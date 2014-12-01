@@ -21,7 +21,7 @@
 	<div>
 		
 		<label for="post">Post:</label> 
-		<textarea name="post"></textarea> // the textarea are like a unlimated text writing box
+		<textarea name="post"></textarea> 
 	</div>
 
 	<div>

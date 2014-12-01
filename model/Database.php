@@ -43,7 +43,7 @@
 		public function openConnection(){
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->Database);// this function turn the private variable to public variable
 
-			if($this->$connection->connect_error){//
+			if($this->connection->connect_error){//
 				die("<p>Error:". $connection->connect_error . "</p>");// the <p> is a percaution for echo the echo out
 
 	}
@@ -66,7 +66,7 @@
 			$query = $this->connection->query($string);
 
 			if(!$query){
-				$this->$error = $this->connection->error;
+				$this->error = $this->connection->error;
 
 			}
 

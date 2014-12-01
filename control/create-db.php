@@ -9,7 +9,7 @@
 	require_once(__DIR__ . "/../model/config.php");//require once is to require a file once
 	//__DIR__  a escape plan form the model to the database.php
 
-		 	$query = $connection->query("CREATE TABLE posts ("
+		 	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 		 		."id int(11) NOT NULL AUTO_INCREMENT,"//this query is creating a table for xampp if is successful it will echo out the message below
 		 		."title varchar(255) NOT NULL,"
 		 		."post text NOT NULL,"
@@ -23,7 +23,7 @@
 		 	echo "<p>successfully created the table: posts</p>";
 		 }
 		 else{
-		 	echo "<p>$connection->error</p>";
+		 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 		 }
 
 

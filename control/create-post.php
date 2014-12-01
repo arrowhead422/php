@@ -10,7 +10,7 @@
 	$post = filter_input(INPUT_POST,"post", FILTER_SANITIZE_STRING);
 
 	// the title and the post are connect to the form and the post which when it echo it echos out the "title" and "post"
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' ");//this query that insers post that set the variable to $title and $post 
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' ");//this query that insers post that set the variable to $title and $post 
 
 	if ($query) {
 		
@@ -19,7 +19,7 @@
 
 	else {
 
-		echo "<p>$connection->error</p>";// if is not true then it will print out this echo
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";// if is not true then it will print out this echo
 
 	}
 
