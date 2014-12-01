@@ -6,8 +6,6 @@
 
 
 	$path = "/php/";//so this file is a connecter to every file and source 
-	
-
 
 	$host = "localhost";
 	$username = "root";

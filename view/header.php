@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>blog 101</title>
-
+<canvas id="myCanvas"></canvas>
     <header>
     
     <meta name="viewport" content="width=device-width", "initial-scale=1.0">
@@ -17,8 +17,10 @@
     <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 
 
-<canvas id="myCanvas"></canvas>
+
 
   </head>
-  <body>
+  <body >
+  <h1>"The moment you doubt whether you can fly, you cease for ever to be able to do it." <small>- J.M. Barrie</small></h1>
+
 
