@@ -6,13 +6,14 @@
 <body>
 
 
-<?php
-	require_once(__DIR__ . "/../model/config.php"); // whith this require once now i have the access to my variable
+	<?php
+		require_once(__DIR__ . "/../model/config.php"); // whith this require once now i have the access to my variable
 
-?>
-<h1> Create Blog Post</h1>
+	?>
+	<h1> Create Blog Post</h1>
 
-<form method="post" action="<?php echo $path . "control/create-post.php"; ?>"> 
+	<form method="post" action="<?php echo $path . "control/create-post.php"; ?>"> 
+	
 	<div>
 		<label for="title"> Title:</label>
 		<input type="text" name="title"/> 
@@ -22,14 +23,17 @@
 		
 		<label for="post">Post:</label> 
 		<textarea name="post"></textarea> 
+	
 	</div>
 
 	<div>
 		<button type="submit">Submit</button>
 	</div>
 
-</form>
+	</form>
 </body>
+
+
 </html>
 
 

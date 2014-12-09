@@ -12,14 +12,14 @@
         require_once(__DIR__ . "/view/footer.php");
         
       
-  class Person {
-          public $me = true;
+      class Person {
+        public $me = true;
           
-          function __construct($name) {
-              $this->name = $name;
-          }
+        function __construct($name) {
+          $this->name = $name;
+            }
           
-          public function dance() {
+        public function dance() {
             return "I'm dancing!";
           }
         }

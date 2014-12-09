@@ -19,7 +19,7 @@ header{
 
 body {
   padding-top:50px;
-  background:url(http://scotch.io/wp-content/uploads/2014/11/silhouette.jpg);
+  background:url('http://www.mdwallpapers.com/gallery/wallpapers_16/Opera-Background-Light-Blue.jpg');
 
   /* make our image 100% width */
   background-size:cover; 
@@ -27,12 +27,12 @@ body {
 
 h1 {
   font-family:'Chango';
-  font-size:50px;  
+  font-size:40px;  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   /* set the background gradient */
-  background:url(http://scotch.io/wp-content/uploads/2014/11/galaxies.jpg);
+  
   background-size:cover;
 
   /* set the animation */

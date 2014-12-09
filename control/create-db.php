@@ -6,7 +6,7 @@
 		 		."id int(11) NOT NULL AUTO_INCREMENT,"//this query is creating a table for xampp if is successful it will echo out the message below
 		 		."title varchar(255) NOT NULL,"
 		 		."post text NOT NULL,"
-		 		."DateTime database NOT NULL , "
+		 		."DateTime database NOT NULL,"
 		 		."PRIMARY KEY (id))");
 
 
