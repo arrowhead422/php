@@ -1,4 +1,5 @@
 <?php
+
 	require_once(__DIR__ . "/../model/config.php");
 
 	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL); //this variable are able to create a email that can be store it in our php
@@ -7,3 +8,51 @@
 
 
 	echo $email . " - " . $username . " - ". $password;
+ 
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
+	 // Php.net   this funcation is called crypt, the crypt we are using right now are hast or cover up the password to prevented to user to have the same password 
+	
+	$hashedPassword = crypt($password, $salt);
+
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET" // with this function query now we can store all the new email, username, and password in php admin.
+			. "email = '$email' , "
+			. "username = '$username' , "
+			. "password = '$hashedPassword',"
+			. "salt = '$salt'");
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

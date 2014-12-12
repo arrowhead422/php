@@ -10,6 +10,7 @@
         require_once(__DIR__ . "/view/navigation.php");
         require_once(__DIR__ . "/control/create-db.php");
         require_once(__DIR__ . "/view/footer.php");
+        require_once(__DIR__ . "/control/read-post");
         
       
       class Person {

@@ -21,6 +21,6 @@
 
   </head>
 <body >
-  <h1>Blog post<small>- Xiang D. QU</small></h1>
+  <h1>Register<small>- Blog 101</small></h1>
 
 
