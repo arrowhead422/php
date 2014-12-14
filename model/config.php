@@ -17,7 +17,7 @@
 		$_SESSION["connection"] = $connection;// session work like function but just how we can use it
 	}
 
-?>
+
 
 
 

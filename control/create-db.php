@@ -21,10 +21,11 @@
 		 }
 
 		 $query = $_SESSION["connection"]->query("CREATE TABLE users (" //this query here are attach to our database connection with store in session varible
-		 . "id int(11) NOT NULL AUTO_INCREMENT," //id,username,email and password are store to the database that are connected to the SESSION
+		 . "id int(11) NOT NULL AUTO_INCREMENT,"						 //id,username,email and password are store to the database that are connected to the SESSION
 		 . "username varchar(30) NOt NULL," 
 		 . "email varchar (50) NOT NULL,"
 		 . "password char(128) NOT NULL,"
+		 . "salt char(128) NOT NULL,"
 		 . "PRIMARY KEY (id))");
 
 
