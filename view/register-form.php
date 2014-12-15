@@ -3,8 +3,10 @@
 
 	?>
 
-
+<h1>Register</h1>
 <form method="post" action="<?php echo $path . "control/create-user.php"; ?>"> 
+
+
 	<div>
 		<label for="email">Email: </label>
 		<input type="text" name="email" />

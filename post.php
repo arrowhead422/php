@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<li><a href="navigaion.php">Home</a> </li> 
+<li><a href="/php/blog.php">Home</a> </li> 
 <?php
 
 	require_once(__DIR__ . "/view/header.php");

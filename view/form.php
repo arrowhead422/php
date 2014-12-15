@@ -1,13 +1,13 @@
-<<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
 
 
 	<?php
 		require_once(__DIR__ . "/../model/config.php"); // whith this require once now i have the access to my variable
+		require_once(__DIR__ . "/../control/login-verify.php");
+
+		if(authenticateUser()) { // prevening from user to open the blog post manualy
+			die();
+		}
 
 	?>
 	<h1> Create Blog Post</h1>
@@ -31,10 +31,6 @@
 	</div>
 
 	</form>
-</body>
-
-
-</html>
 
 
 

@@ -19,7 +19,10 @@ header{
 
 body {
   padding-top:50px;
-  background:url('http://images5.alphacoders.com/370/370793.jpg');
+  background:url('http://www.backgroundsy.com/file/large/digital-waves-background.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
   
 
   /* make our image 100% width */

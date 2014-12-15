@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<li><a href="/php/blog.php">Home</a> </li> 
+
 <?php
 
 	require_once(__DIR__ . "/../model/config.php");
@@ -26,7 +33,10 @@
 
 	}
 
+?>
 
+</body>
+</html>
 
 	
 
