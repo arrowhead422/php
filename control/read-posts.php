@@ -4,7 +4,7 @@
 
 	require_once(__DIR__ . "/../model/config.php"); // connecting to config.php
 
-	$query = "SELECT * FROM POSTS";
+	$query = "SELECT * FROM post";
 	$result = $_SESSION["connection"]->query($query);
 
 	if($result) {

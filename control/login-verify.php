@@ -9,7 +9,7 @@
 		}
 
 		else{
-			if($_SESSION["authenticated"] != ture){
+			if($_SESSION["authenticated"] != true){
 				return false;
 			}
 

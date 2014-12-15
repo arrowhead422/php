@@ -1,11 +1,9 @@
-
-
-
-	<?php
+<?php
 		require_once(__DIR__ . "/../model/config.php"); // whith this require once now i have the access to my variable
 		require_once(__DIR__ . "/../control/login-verify.php");
 
-		if(authenticateUser()) { // prevening from user to open the blog post manualy
+		if(!authenticateUser()) { // prevening from user to open the blog post manualy
+			header("Location: " . $path . "blog.php");
 			die();
 		}
 

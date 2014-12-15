@@ -14,11 +14,11 @@
 	
 	$hashedPassword = crypt ($password, $salt);
 
-	$query = $_SESSION["connection"]->query("INSERT INTO users SET" // with this function query now we can store all the new email, username, and password in php admin.
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET " // with this function query now we can store all the new email, username, and password in php admin.
 			. "email = '$email',"
 			. "username = '$username',"
 			. "password = '$hashedPassword',"
-			. "salt = '$salt',");
+			. "salt = '$salt'");
 
 	if($query) {
 		echo "Successfully created user: $username";

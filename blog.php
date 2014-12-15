@@ -10,9 +10,8 @@
         require_once(__DIR__ . "/view/header.php");// all these require once is what display my file and website
         if (authenticateUser()) { // the reason why we created if statment, is because we have check if the user login correctly to open up the blog-post.
           require_once(__DIR__ . "/view/navigation.php");
+          require_once(__DIR__ . "/control/create-db.php");
         }
-        
-        require_once(__DIR__ . "/control/create-db.php");
         require_once(__DIR__ . "/view/footer.php");
         require_once(__DIR__ . "/control/read-posts.php");
         
