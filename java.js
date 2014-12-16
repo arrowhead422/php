@@ -20,3 +20,23 @@ else
 }
 
 bounceBubbles();
+
+
+
+
+$('article').readmore({
+  speed: 75,
+  maxHeight: 500
+});
+
+$('article').readmore({
+  afterToggle: function(trigger, element, expanded) {
+    if(! expanded) { // The "Close" link was clicked
+      $('html, body').animate( { scrollTop: element.offset().top }, {duration: 100 } );
+    }
+  }
+});
+
+$('article').readmore({sectionCSS: 'display: inline-block; width: 50%;'});
+$('article').readmore({embedCSS: false});
+$('article').readmore('destroy');

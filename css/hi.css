@@ -1,11 +1,112 @@
+.readmore-js-toggle, .readmore-js-section {
+  display: block;
+  width: 100%;
+}
+.readmore-js-section {
+  overflow: hidden;
+}
 
 
+
+
+
+
+h1 {
+  margin-bottom: 15px;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  color: #202024;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 300px;
+  padding: 8px 24px 8px 24px;
+  transition: all 0.25s;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.button:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+.button-readmore {
+  display: inline-block;
+  background-color:rgba(0,0,0,0.3);
+  text-decoration: none;
+  border-radius: 300px;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.3);
+  height: 44px;
+  width: 44px;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.button-readmore:hover {
+  width: 159px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.button-readmore span {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 37px;
+  width: 159px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  transition: left 0.25s;
+}
+.button-readmore:hover span {
+  left: 0;
+}
+.button-readmore:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content:"...";
+  display: block;
+  height: 44px;
+  width: 44px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  transition: left 0.35s;
+}
+.button-readmore:hover:before {
+  left: -37px;
+}
+
+
+
+
+
+
+
+
+
+head{
+  background-color: white;
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+ background-size:cover; 
+}
 header{
 
-	border-radius: 200px;
-	border-radius: 29px;
-	background-color: red;
-	width: 1500px;
+    background-image: url("http://www.wallshark.com/wallpapers/2013/09/Yellow-Background-Different-Color-1800x2880.jpg");
+    border-radius: 20px;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	 background-size:cover; 
+   padding: 30px;
+	background-color: white;
+
+  height: 250px;
 
 }
 #mycanvas{
@@ -18,8 +119,8 @@ header{
 @import url(http://fonts.googleapis.com/css?family=Chango);
 
 body {
-  padding-top:50px;
-  background:url('http://www.backgroundsy.com/file/large/digital-waves-background.jpg');
+  
+  background:url('https://www.storyofcooks.com/wp-content/uploads/2014/04/simple-background-4.jpg');
   background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -28,10 +129,14 @@ body {
   /* make our image 100% width */
   background-size:cover; 
 }
+small{
+  color: gray;
+}
 
-h1 {
-  font-family:'Chango';
-  font-size:40px;  
+#h1 {
+font-family: 'PT Sans', sans-serif;  
+font-size:40px;  
+  text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -43,17 +148,15 @@ h1 {
   -webkit-animation:moving 20s ease infinite;
 }
 
+small{
+  font-size: 10px;
+
+}
 /* create the animation */
-@-webkit-keyframes moving {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 500px;
-  }
-}​
-@meida screen and (max-width:1499px) {
-	header{
+ S
+@meida screen and (max-width:1200px) {
+	
+  header{
 		width: 100%
 	}
 	#mycanvas{

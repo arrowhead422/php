@@ -1,3 +1,5 @@
+<li><a href="/php/blog.php">Home</a> </li> 
+
 <?php
 	// this file look really simlier to create-user.php
 	require_once(__DIR__ . "/../model/config.php");

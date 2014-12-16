@@ -1,3 +1,5 @@
+<li><a href="/php/blog.php">Home</a> </li> 
+
 <?php
 		// the code here are replely from register.php
 

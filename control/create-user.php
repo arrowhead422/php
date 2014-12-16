@@ -1,3 +1,6 @@
+
+<li><a href="/php/blog.php">Home</a> </li> 
+
 <?php
 
 	require_once(__DIR__ . "/../model/config.php");
