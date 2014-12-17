@@ -2,11 +2,19 @@
   <head>
     <title>blog 101</title>
       
-        <header>
-        <h1 id="h1">Torco Article<small> simply blog post</small></h1>
-       
-
-        </header>
+       <header>
+  <a href="#" id="logo">
+    <h1>Nick Pettit</h1>
+    <h2>Designer</h2>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#" class="selected">Portfolio</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
           <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
           <link rel="stylesheet" type="text/css" href="css/hi.css">
           <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>

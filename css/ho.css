@@ -1,0 +1,91 @@
+html { height: 100%; }
+
+body {
+  height: 100%;
+  background: url(http://images6.alphacoders.com/371/371656.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachement: fixed;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+.nav {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+.nav a {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  color: #777;
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav a.active {
+  color: #333;
+}
+
+.welcome-wrapper {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+.welcome {
+  position: absolute;
+  clear: both;
+  width: 100%;
+  padding: 3rem 5rem;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #111;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.message {
+  float: left;
+  width: 50%;
+}
+
+.message h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.message strong {
+  font-weight: 300;
+}
+
+.footer-wrapper { position: relative; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 0.6rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+
+img{
+  float: right;
+  border-radius: 100px;
+}
