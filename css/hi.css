@@ -1,4 +1,4 @@
-.readmore-js-toggle, .readmore-js-section {
+#article{
   display: block;
   width: 100%;
 }
@@ -71,24 +71,25 @@ nav {
   display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  float: right;
   margin: 0;
   padding: 0;
-  height: 100%;
+  
   z-index: 999;
- 
-  background-color: #ea4444;
+     
 }
 
 nav ul {
   margin: 10px;
   padding: 10px;
   font-size: 17px;
+  float: right;
 }
 
 nav ul span {
   display: block;
   position: absolute;
+  float: right;
   
   background-color: #fff;
 }
@@ -96,6 +97,7 @@ nav ul span {
 nav ul li {
   display: block;
   list-style: none;
+
 }
 
 nav ul li a {
@@ -242,4 +244,7 @@ small{
 		width: 100%
 	}
 
+}
+#no{
+  float: right;
 }
