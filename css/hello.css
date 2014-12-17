@@ -1,5 +1,12 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-image: url(http://images6.alphacoders.com/371/371656.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachement: fixed;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
 }
 
 #wrapper {
@@ -118,7 +125,7 @@ PAGE: PORTFOLIO
   width: 95px;
   margin: 2.5%;
   padding: .5%;
-  background-color: #f5f5f5;
+  
   font-family: 'Cousine', ;
   color: #bdc3c7;
 }
@@ -135,7 +142,7 @@ PAGE: PORTFOLIO
   width: 150px;
   height: 200px;
   float: right ;
-  background-color: red;
+
   color: #bdc3c7;
   text-align: center;
   text-decoration: underline;
@@ -232,7 +239,7 @@ body {
 
 /* green header */
 header {
-  background: #6ab47b;
+  background-color: #ea4444;
   border-color: #599a68;
 }
 
